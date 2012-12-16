@@ -1,0 +1,25 @@
+caption always "%?%F%{= rk}%:%{r dd}%?%-Lw%{=ru}%?%n%f %t%{-}%?%50L>%+Lw%<"
+hardstatus alwayslastline "%{= dd}"
+
+cjkwidth on
+
+defscrollback 10000
+term xterm-256color
+
+# window movement
+bind ^u eval "focus left" "focus up"
+bind ^i eval "focus right" "focus up"
+bind ^j eval "focus left" "focus down"
+bind ^k eval "focus right" "focus down"
+
+bind ^o layout next
+
+escape ^Tt
+
+layout new
+layout new
+screen 0
+screen 1
+
+
+vbell off
